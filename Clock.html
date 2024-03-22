@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATE & TIME</title>
+</head>
+
+<body>
+
+  <script>
+
+    //Ways to create object in JS
+
+    // 1)new Date() : constructor
+    // 2)new Date(milliseconds)
+    // 3)new Date(Date string)
+    // 4)new Date(year,month,day,hours,minutes,seconds,milliseconds)
+
+
+    //*********** 1)new Date() : constructor**********
+    const timeNow = new Date();
+    console.log(timeNow);   //shows current date and time
+
+    const time1 = new Date(0);
+
+    //epoch time
+    console.log(time1);
+
+    //*********** 2)new Date(milliseconds)**************
+    //10000000000000 ms after epoch time
+    const time2 = new Date(100000000000);
+    console.log(time2);
+
+    // **********3)new Date(Date string)***********
+
+    // 1) ISO Date format
+
+    const date = new Date("2024-03-05");
+    console.log(date);
+    const date1 = new Date("2024-03");
+    console.log(date);
+    const date2 = new Date("2024");
+    console.log(date);
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
